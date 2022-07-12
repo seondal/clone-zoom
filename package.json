@@ -1,0 +1,31 @@
+{
+  "name": "clone-zoom",
+  "version": "1.0.0",
+  "description": "practice WebSocket, NodeJS",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seondal/clone-zoom.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "bugs": {
+    "url": "https://github.com/seondal/clone-zoom/issues"
+  },
+  "homepage": "https://github.com/seondal/clone-zoom#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6",
+    "@babel/node": "^7.18.6",
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.18.6",
+    "express": "^4.18.1",
+    "pug": "^3.0.2",
+    "ws": "^8.8.0"
+  }
+}
