@@ -28,13 +28,17 @@ wss.on("connection", (socket) => {
   socket.on("message", (msg) => {
     const message = JSON.parse(msg);
 
+    console.log(message.type);
+
     switch (message.type) {
       case "new_message":
         sockets.forEach((aSocket) =>
           aSocket.send(`${socket.nickname} : ${message.payload}`)
         );
+        break;
       case "nickname":
         socket["nickname"] = message.payload;
+        break;
     }
   });
   socket.send("hello");
